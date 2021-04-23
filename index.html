@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Spy Game</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="locations.js"></script>
+        <script src="random.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <nav>
+            <h1>Spy Game</h1>
+        </nav>
+        <main>
+            <section id="setup">
+                <p>
+                    <h2>How many people are playing?</h2>
+                    <input id="setup-players" type="number" min="4" max="6" value="6">
+                </p>
+                <p>
+                    <h2>What's the magic number?</h2>
+                    <input id="setup-magic" type="text" value="1234">
+                </p>
+                <p>
+                    <h2>Which player are you?</h2>
+                    <select id="setup-player">
+                        <option value="1">Player #1</option>
+                        <option value="2">Player #2</option>
+                        <option value="3">Player #3</option>
+                        <option value="4">Player #4</option>
+                        <option value="5">Player #5</option>
+                        <option value="6">Player #6</option>
+                    </select>
+                </p>
+                <hr>
+                <p>
+                    <button id="setup-start">Start Game</button>
+                </p>
+            </section>
+            <section id="player">
+                <header>
+                    <div>Your role is <span id="player-role"></span>.</div>
+                    <div>The location is <span id="player-location"></span>.</div>
+                </header>
+                <div class="locations"></div>
+            </section>
+            <section id="spy">
+                <header>
+                    <div>You are the spy!</div>
+                </header>
+                <div class="locations"></div>
+            </section>
+            <footer>
+                <hr>
+                Game #<span id="game-number"></span> <button id="next-game">Next Game</button>
+            </footer>
+        </main>
+    </body>
+</html>

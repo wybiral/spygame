@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html, body {
+    color: #f8f8f2;
+    background: #1e1e1e;
+    font-size: 125%;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+p {
+    padding-bottom: 0.5em;
+}
+
+nav {
+    max-width: 640px;
+    margin: 0px auto;
+    padding: 0.25em;
+}
+
+main {
+    max-width: 640px;
+    margin: 0px auto;
+}
+
+#setup {
+    padding: 0.25em;
+}
+
+main #player {
+    display: none;
+}
+
+main #player header {
+    color: #66d9ef;
+    padding: 0.25em;
+}
+
+main #player header span {
+    color: #a6e22e;
+}
+
+main #spy {
+    display: none;
+}
+
+main #spy header {
+    color: #fd971f;
+    padding: 0.25em;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations > div {
+    display: inline-block;
+    flex: 50%;
+    padding: 0.25em;
+}
+
+.locations > div > div {
+    width: 100%;
+    display: inline-block;
+    background: #282a2e;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    vertical-align: top;
+    padding: 0.25em;
+}
+
+footer {
+    display: none;
+    text-align: right;
+    padding: 0.25em;
+}
+
+footer button {
+    margin-left: 1em;
+    padding: 0.25em 0.5em;
+}
+
+a:link {
+    color: #66d9ef;
+}
+
+a:visited {
+    color: #ae81ff;
+}
+
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background: #282a2e;
+    height: 3px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 125%;
+    color: #f92672;
+    padding-top: 1em;
+}
+
+h2 {
+    color: #a6e22e;
+}
+
+h3 {
+    color: #fd971f;
+}
+
+h4 {
+    color: #e6db74;
+}
+
+.c0 {
+    color: #1e1e1e;
+}
+
+.c1 {
+    color: #f8f8f2;
+}
+
+input, button, select, option {
+    font-size: 100%;
+    color: #f8f8f2;
+    background: #282a2e;
+    padding: 0.5em 1em;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+button {
+    cursor: pointer;
+}
